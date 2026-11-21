@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Rebellion VPN</title>
+    <meta
+      name="description"
+      content="Rebellion VPN privacy policy: settings are stored locally in Chrome, no analytics or telemetry, no data sale, and no account. Read exactly what the extension requests and why."
+    />
+    <meta name="theme-color" content="#08090c" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rebellion VPN" />
+    <meta property="og:title" content="Privacy Policy — Rebellion VPN" />
+    <meta
+      property="og:description"
+      content="Local settings, no analytics, no telemetry, no data sale, no account. The full privacy policy for the Rebellion VPN browser extension."
+    />
+    <meta property="og:image" content="assets/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-privacy">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <div class="backdrop" aria-hidden="true">
+      <div class="backdrop-grid"></div>
+      <div class="backdrop-glow glow-cyan"></div>
+      <div class="backdrop-glow glow-coral"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Rebellion VPN home">
+          <svg class="brand-mark" viewBox="0 0 128 128" aria-hidden="true">
+            <path
+              d="M64 8c14 7 27 10 44 11v40c0 25-17 44-44 56C37 103 20 84 20 59V19c17-1 30-4 44-11Z"
+              fill="currentColor"
+            />
+            <path
+              d="M64 27v34M48 38a24 24 0 1 0 32 0"
+              fill="none"
+              stroke="#fff"
+              stroke-width="8"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span class="brand-name">Rebellion <b>VPN</b></span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#how">How it works</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html" aria-current="page">Privacy</a>
+        </nav>
+
+        <a class="btn btn-small btn-ghost header-cta" href="index.html#quick-start">Quick start</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="doc-hero">
+        <div class="shell">
+          <p class="eyebrow"><span class="pulse-dot"></span> Legal</p>
+          <h1>Privacy Policy</h1>
+          <p class="doc-lead">
+            Short version: Rebellion VPN keeps your settings in your browser, does not run an
+            analytics or tracking service, and does not sell data. The details are below.
+          </p>
+          <div class="doc-meta">
+            <span>Effective <b>21 November 2026</b></span>
+            <span>Applies to <b>Rebellion VPN 2.0.0</b></span>
+            <span>Contact <b>GitHub issues</b></span>
+          </div>
+        </div>
+      </section>
+
+      <div class="shell doc-layout">
+        <aside class="toc" aria-label="On this page">
+          <h2>On this page</h2>
+          <ol>
+            <li><a href="#scope">Scope</a></li>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#stored">Stored on your device</a></li>
+            <li><a href="#requests">Network requests</a></li>
+            <li><a href="#not-collected">What we don't collect</a></li>
+            <li><a href="#permissions">Permissions</a></li>
+            <li><a href="#sharing">Sharing and sale</a></li>
+            <li><a href="#retention">Retention and deletion</a></li>
+            <li><a href="#website">This website</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#changes">Changes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ol>
+        </aside>
+
+        <div class="prose">
+          <h2 id="scope">1. Scope</h2>
+          <p>
+            This policy explains how the <strong>Rebellion VPN</strong> browser extension for
+            Google Chrome and this website handle information. Rebellion VPN is an independent
+            browser extension project; in this policy, “we” and “us” refer to its developer.
+          </p>
+          <p>
+            Rebellion VPN is a <strong>location switcher</strong> for a compatible VPN connection
+            that you already use. It is not a VPN service provider and does not operate the VPN
+            tunnel.
+          </p>
+
+          <h2 id="summary">2. Summary</h2>
+          <div class="callout">
+            <span class="callout-label">At a glance</span>
+            <p>
+              No account. No analytics or telemetry. No advertising. No sale of data. Your settings
+              stay in Chrome's local extension storage. The extension contacts only the endpoints
+              needed for its features — the server list, latency checks, and an exit-IP check — which
+              belong to the VPN service you are using.
+            </p>
+          </div>
+
+          <h2 id="stored">3. Information stored on your device</h2>
+          <p>
+            The extension uses <code>chrome.storage.local</code>. This data stays on your computer
+            inside your Chrome profile and is not synced to us. It includes:
+          </p>
+          <ul>
+            <li>
+              <strong>Settings</strong> — auto-connect on startup, WebRTC leak protection, and your
+              selected server.
+            </li>
+            <li><strong>Favorites</strong> — locations or servers you star.</li>
+            <li><strong>Recent locations</strong> — servers you connected to recently.</li>
+            <li>
+              <strong>Cached server list</strong> — server names, locations, and the time it was last
+              updated, so the popup opens quickly.
+            </li>
+            <li>
+              <strong>Latency results</strong> — approximate response times from speed tests, cached
+              for about 15 minutes.
+            </li>
+            <li>
+              <strong>Connection state</strong> — whether the extension believes it is connected, and
+              the exit IP and location returned by the connection check while the popup is open.
+            </li>
+            <li>
+              <strong>Original proxy and WebRTC settings</strong> — saved only so they can be
+              restored when you disconnect or remove the extension.
+            </li>
+          </ul>
+          <p>
+            You can clear favorites and recent locations in Settings. Removing the extension deletes
+            all of its local data.
+          </p>
+
+          <h2 id="requests">4. Network requests</h2>
+          <p>
+            To work, the extension must talk to the VPN service that provides your connection. It
+            does not send your data to a Rebellion VPN server — we do not operate one.
+          </p>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Request</th>
+                  <th>Why</th>
+                  <th>When</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Server list</td>
+                  <td>To show locations and available servers.</td>
+                  <td>At startup, and when you choose Refresh Server List.</td>
+                </tr>
+                <tr>
+                  <td>Latency checks</td>
+                  <td>To estimate which servers respond fastest.</td>
+                  <td>When you test servers or use Fastest server.</td>
+                </tr>
+                <tr>
+                  <td>Exit IP check</td>
+                  <td>To display your exit IP and location after connecting.</td>
+                  <td>When you connect or refresh the connection state.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            These requests go directly to endpoints operated by your VPN service. Like any web
+            request, they necessarily reveal your IP address and standard technical details (such as
+            your user agent) to that service. That service handles the request under its own privacy
+            policy. We do not receive a copy, and we do not log these requests.
+          </p>
+          <p>
+            The exit IP shown in the popup is displayed locally. It is not transmitted to us or
+            stored anywhere other than your browser's local extension storage.
+          </p>
+
+          <div class="callout callout-warn">
+            <span class="callout-label">Important</span>
+            <p>
+              Your VPN service can see your traffic while connected, exactly as it would without
+              this extension. Choose a VPN service you trust.
+            </p>
+          </div>
+
+          <h2 id="not-collected">5. What we don't collect</h2>
+          <ul>
+            <li>No browsing history, page contents, form data, or keystrokes.</li>
+            <li>No analytics, telemetry, crash reporting, or advertising identifiers.</li>
+            <li>No account, email address, or payment information.</li>
+            <li>No precise location from your device.</li>
+            <li>No data sold, rented, or shared for marketing.</li>
+          </ul>
+          <p>
+            The extension does not inject ads, change search results, or track you across sites.
+          </p>
+
+          <h2 id="permissions">6. Permissions and why they are needed</h2>
+          <ul>
+            <li>
+              <strong>proxy</strong> — to apply the location you choose to Chrome's connection
+              settings. This is the core feature.
+            </li>
+            <li>
+              <strong>storage</strong> — to keep your settings, favorites, and recent locations
+              locally.
+            </li>
+            <li>
+              <strong>privacy</strong> — to enable or disable WebRTC leak protection using Chrome's
+              privacy settings.
+            </li>
+            <li>
+              <strong>Host access to your VPN service's endpoints</strong> — limited to the server
+              list, latency checks, and exit-IP check described above.
+            </li>
+          </ul>
+
+          <h2 id="sharing">7. Sharing and sale</h2>
+          <p>
+            We do not sell, rent, or trade personal data. We do not share data with advertisers,
+            data brokers, or analytics providers. Because we do not operate a collection server,
+            there is no database of user activity for us to share.
+          </p>
+          <p>
+            We may disclose information only if we are legally required to and actually hold it —
+            which, by design, is effectively nothing beyond what is already on your device.
+          </p>
+
+          <h2 id="retention">8. Retention and deletion</h2>
+          <p>
+            Local data remains until you clear it, remove the extension, or delete your Chrome
+            profile. To delete everything:
+          </p>
+          <ol>
+            <li>Open <code>chrome://extensions</code>.</li>
+            <li>Find <b>Rebellion VPN</b> and choose <b>Remove</b>.</li>
+          </ol>
+
+          <h2 id="website">9. This website</h2>
+          <p>
+            This site is a static website. It sets no cookies and runs no analytics, advertising, or
+            tracking scripts. It loads no third-party fonts or CDN resources.
+          </p>
+          <p>
+            The site is hosted on GitHub Pages. GitHub may process standard server logs (such as IP
+            address and request time) to deliver the site, under
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+              >GitHub's privacy statement</a
+            >. Links to external sites, including GitHub, are governed by those sites' policies.
+          </p>
+
+          <h2 id="children">10. Children</h2>
+          <p>
+            The extension is not directed to children under 13, and we do not knowingly collect
+            information from them.
+          </p>
+
+          <h2 id="changes">11. Changes to this policy</h2>
+          <p>
+            If the extension's data practices change, this page will be updated and the effective
+            date revised. Material changes will also be noted in the extension's release notes.
+          </p>
+
+          <h2 id="contact">12. Contact</h2>
+          <p>
+            Questions about this policy or a privacy concern? Open an issue on GitHub. Please do not
+            include credentials, your exact IP address, or other personal information.
+          </p>
+          <div class="contact-card">
+            <div>
+              <h3>Privacy questions</h3>
+              <p>Public issue tracker for Rebellion VPN.</p>
+            </div>
+            <a class="btn btn-primary" href="https://github.com/Ahmedeisa25/rebellion-vpn/issues">
+              Open an issue
+            </a>
+          </div>
+
+          <hr />
+          <p>
+            See also the <a href="terms.html">terms of use</a> and
+            <a href="support.html">support page</a>.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Rebellion VPN home">
+            <svg class="brand-mark" viewBox="0 0 128 128" aria-hidden="true">
+              <path
+                d="M64 8c14 7 27 10 44 11v40c0 25-17 44-44 56C37 103 20 84 20 59V19c17-1 30-4 44-11Z"
+                fill="currentColor"
+              />
+              <path
+                d="M64 27v34M48 38a24 24 0 1 0 32 0"
+                fill="none"
+                stroke="#fff"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+            </svg>
+            <span class="brand-name">Rebellion <b>VPN</b></span>
+          </a>
+          <p>
+            A browser-side VPN location switcher for a compatible VPN connection. Not a VPN
+            service provider.
+          </p>
+        </div>
+
+        <nav class="footer-col" aria-label="Product">
+          <h2>Product</h2>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#how">How it works</a>
+          <a href="index.html#faq">FAQ</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Support">
+          <h2>Support</h2>
+          <a href="support.html">Help centre</a>
+          <a href="support.html#quick-start">Quick start</a>
+          <a href="support.html#report">Report an issue</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Legal">
+          <h2>Legal</h2>
+          <a href="privacy.html">Privacy policy</a>
+          <a href="terms.html">Terms of use</a>
+        </nav>
+      </div>
+
+      <div class="shell footer-bottom">
+        <span>© 2026 Rebellion VPN · v2.0.0</span>
+        <span>Made for Chrome · No trackers on this page</span>
+      </div>
+    </footer>
+  </body>
+</html>

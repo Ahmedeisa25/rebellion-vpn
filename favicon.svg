@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rebellion VPN">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151a21" />
+      <stop offset="1" stop-color="#08090c" />
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff6b77" />
+      <stop offset="1" stop-color="#e8323f" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)" />
+  <rect x="0.5" y="0.5" width="63" height="63" rx="13.5" fill="none" stroke="#2b323c" />
+  <g transform="translate(12 9) scale(0.3125)">
+    <path
+      d="M64 8c14 7 27 10 44 11v40c0 25-17 44-44 56C37 103 20 84 20 59V19c17-1 30-4 44-11Z"
+      fill="url(#shield)"
+    />
+    <path
+      d="M64 27v34M48 38a24 24 0 1 0 32 0"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="8"
+      stroke-linecap="round"
+    />
+  </g>
+</svg>
