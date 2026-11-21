@@ -255,6 +255,20 @@
             <h4>Auto-connect on startup</h4>
             <p>Reconnects to your selected server when Chrome starts — off until you turn it on.</p>
           </div>
+          <div class="mini">
+            <h4>Local network bypass</h4>
+            <p>
+              Your router, NAS, printer, and localhost skip the VPN, so local addresses keep
+              working.
+            </p>
+          </div>
+          <div class="mini">
+            <h4>Whole browser or one site</h4>
+            <p>
+              Route everything through the VPN, or only the sites you add. Chrome scopes by domain,
+              not by tab.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -359,6 +373,22 @@
             <p>
               Server availability changes. Use <b>Random server</b> to retry automatically, choose
               another location, or run <b>Refresh Server List</b> to fetch an updated list.
+            </p>
+          </details>
+          <details>
+            <summary>Will my router and local devices still work?</summary>
+            <p>
+              Yes. <b>Bypass local network</b> is on by default, so private addresses such as your
+              router, NAS, printer, and localhost connect directly. You can add extra hosts in
+              Settings → Local network.
+            </p>
+          </details>
+          <details>
+            <summary>Can I use the VPN for one site only?</summary>
+            <p>
+              You can choose <b>Settings → Scope → Selected sites</b> and add a domain. Chrome
+              scopes proxy settings by browser profile, not by tab, so only that domain and its
+              subdomains use the VPN; everything else connects directly.
             </p>
           </details>
           <details>

@@ -212,6 +212,31 @@
             <li>Some locations may not be included in your VPN plan.</li>
           </ul>
 
+          <h3>Your router, NAS, or printer won't open</h3>
+          <ul>
+            <li>
+              Open <b>Settings → Local network</b> and make sure <b>Bypass local network</b> is on.
+              Router ranges such as 192.168.x.x, 10.x.x.x, and 172.16–31.x.x then connect directly.
+            </li>
+            <li>
+              If your device uses a hostname instead of an IP address, add it under
+              <b>Extra bypass rules</b> (one host per line) and select <b>Save rules</b>.
+            </li>
+            <li>Reconnect to the VPN after saving so the new rules are applied.</li>
+          </ul>
+
+          <h3>You only want the VPN for one site</h3>
+          <p>
+            Open <b>Settings → Scope</b>, choose <b>Selected sites</b>, then select
+            <b>Add current site</b>. Only that domain and its subdomains use the VPN; everything else
+            connects directly.
+          </p>
+          <p>
+            Chrome applies proxy settings to the whole browser profile, not to a single tab. That
+            mode scopes by domain, so other tabs on the same domain are covered, and third-party
+            resources loaded from other domains connect directly.
+          </p>
+
           <h3>The location changed but the site still shows my old region</h3>
           <ul>
             <li>Reload the page after connecting — many sites cache location data.</li>

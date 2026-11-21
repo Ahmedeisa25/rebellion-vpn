@@ -134,6 +134,10 @@
               <strong>Settings</strong> — auto-connect on startup, WebRTC leak protection, and your
               selected server.
             </li>
+            <li>
+              <strong>Scope and rules</strong> — whether the VPN applies to the whole browser or to
+              selected sites, the domains you add, and any extra local-network bypass rules.
+            </li>
             <li><strong>Favorites</strong> — locations or servers you star.</li>
             <li><strong>Recent locations</strong> — servers you connected to recently.</li>
             <li>
@@ -239,10 +243,20 @@
               privacy settings.
             </li>
             <li>
+              <strong>activeTab</strong> — only when you choose <b>Add current site</b>, to read the
+              address of the tab you are on so its domain can be added to your local selected-sites
+              list. Page content, history, and other tabs are never read.
+            </li>
+            <li>
               <strong>Host access to your VPN service's endpoints</strong> — limited to the server
               list, latency checks, and exit-IP check described above.
             </li>
           </ul>
+          <p>
+            Private addresses — your router, NAS, printer, and localhost — bypass the proxy by
+            default while <b>Bypass local network</b> is on. You can turn that off or add extra
+            rules in the extension's settings.
+          </p>
 
           <h2 id="sharing">7. Sharing and sale</h2>
           <p>
