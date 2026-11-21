@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmedeisa25.github.io/rebellion-vpn/sitemap.xml
