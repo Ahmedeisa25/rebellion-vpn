@@ -1,17 +1,19 @@
 # Rebellion VPN
 
+**Live site:** https://ahmedeisa25.github.io/rebellion-vpn/
+
 Public website for **Rebellion VPN**, a browser-side VPN location switcher for a compatible VPN connection you already use.
 
 The extension does not create or manage the VPN tunnel. It changes the browser's connection location for a compatible VPN service, and it is not a VPN service provider.
 
 ## Pages
 
-| Page | Path | Purpose |
+| Page | URL | Purpose |
 | --- | --- | --- |
-| Overview | `index.html` | Product landing page |
-| Support | `support.html` | Quick start and troubleshooting |
-| Privacy Policy | `privacy.html` | Data practices for the extension |
-| Terms of Use | `terms.html` | Licence and acceptable use |
+| Overview | https://ahmedeisa25.github.io/rebellion-vpn/ | Product landing page |
+| Support | https://ahmedeisa25.github.io/rebellion-vpn/support.html | Quick start and troubleshooting |
+| Privacy Policy | https://ahmedeisa25.github.io/rebellion-vpn/privacy.html | Data practices for the extension |
+| Terms of Use | https://ahmedeisa25.github.io/rebellion-vpn/terms.html | Licence and acceptable use |
 
 ## Local preview
 
